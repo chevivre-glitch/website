@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Black Hawk — Author</title>
+  <meta name="description" content="Official author page for Black Hawk, featuring the dark fantasy LitRPG novel ‘Voice of the Dead Halo’." />
+  <meta property="og:title" content="Black Hawk — Author" />
+  <meta property="og:description" content="Discover ‘Voice of the Dead Halo’ and join the newsletter for release updates." />
+  <!-- If hosting the image beside this file, the relative path below should work. 
+       Otherwise, update the content attribute to your hosted image URL. -->
+  <meta property="og:image" content="./Voice of the Dead Halo_front_03 (4).jpg" />
+  <meta name="theme-color" content="#180a0c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Spectral:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-0:#0b0b0f;        /* near-black */
+      --bg-1:#14090c;        /* very dark purple-red */
+      --text:#e8e6e3;        /* light parchment */
+      --muted:#c8c3bd;       /* softer text */
+      --accent:#7e0f12;      /* dark red buttons */
+      --accent-2:#a6191c;    /* hover red */
+      --ring:#b42a2e;
+      --card:#151217;
+      --shadow: 0 10px 35px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.04) inset;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      color:var(--text);
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(120, 12, 18, .25), transparent 70%),
+                  radial-gradient(1000px 700px at -10% 10%, rgba(120, 12, 18, .18), transparent 60%),
+                  linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 85%);
+      font-family: 'Spectral', ui-serif, Georgia, 'Times New Roman', serif;
+      line-height:1.6;
+    }
+
+    /* Layout */
+    .container{width:min(1100px, 92%); margin:0 auto}
+
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(8px);
+      background: linear-gradient(180deg, rgba(10,10,12,.85), rgba(10,10,12,.55));
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{display:flex; align-items:baseline; gap:.6rem; text-decoration:none; color:var(--text)}
+    .brand__logo{font-family:'UnifrakturCook', serif; font-size:clamp(24px, 3vw, 34px); letter-spacing:.5px}
+    .brand__sub{font-size: .95rem; color:var(--muted)}
+    nav a{color:var(--muted); text-decoration:none; margin-left:1.25rem; font-weight:600}
+    nav a:hover{color:#fff}
+
+    /* Buttons */
+    .btn{appearance:none; border:none; cursor:pointer; text-decoration:none;
+      padding:12px 18px; border-radius:10px; font-weight:700; letter-spacing:.3px;
+      color:#fff; background:var(--accent); box-shadow: 0 6px 18px rgba(126,15,18,.35);
+      transition: transform .12s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover{background:var(--accent-2); transform: translateY(-1px); box-shadow: 0 10px 26px rgba(166,25,28,.35)}
+    .btn--ghost{background:transparent; border:1px solid var(--ring); color:var(--text)}
+    .btn--ghost:hover{background:rgba(180,42,46,.15)}
+
+    /* Hero */
+    .hero{padding: clamp(60px, 8vw, 120px) 0 40px}
+    .hero__grid{display:grid; gap:2.25rem; align-items:center; grid-template-columns:1.1fr .9fr}
+    .tag{display:inline-block; padding:6px 10px; border:1px solid var(--ring); border-radius:999px; font-size:.8rem; color:var(--muted); margin-bottom:12px}
+    h1{font-family:'UnifrakturCook', serif; font-size:clamp(36px, 6vw, 64px); line-height:1.1; margin:.2rem 0 1rem}
+    .lead{color:var(--muted); font-size:clamp(1rem, 1.4vw, 1.2rem)}
+    .cta-row{display:flex; gap:.8rem; flex-wrap:wrap; margin-top:18px}
+
+    .cover{
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0));
+      padding:14px; border-radius:14px; box-shadow: var(--shadow);
+    }
+    .cover img{display:block; width:100%; height:auto; border-radius:10px}
+    .caption{color:var(--muted); font-size:.9rem; margin-top:8px}
+
+    /* Sections */
+    section{padding:70px 0}
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:28px; box-shadow: var(--shadow)}
+    h2{font-size:clamp(26px, 3.2vw, 34px); margin:0 0 12px}
+
+    /* Book */
+    .book-grid{display:grid; gap:1.5rem; grid-template-columns: .9fr 1.1fr; align-items:start}
+    .meta{display:grid; gap:.35rem; font-size:.98rem; color:var(--muted)}
+    .meta strong{color:#fff}
+
+    /* Newsletter */
+    form{display:grid; grid-template-columns: 1fr auto; gap:.6rem; margin-top:10px}
+    input[type=email]{
+      background:#0f0d11; border:1px solid rgba(255,255,255,.12);
+      color:var(--text); padding:12px 14px; border-radius:10px; outline:none;
+    }
+    input[type=email]::placeholder{color:#9a9590}
+
+    /* Footer */
+    footer{padding:30px 0; color:var(--muted); border-top:1px solid rgba(255,255,255,.06)}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero__grid, .book-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand__logo">Black Hawk</span>
+        <span class="brand__sub">Author</span>
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#book">Books</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <span class="tag">Dark Fantasy • LitRPG</span>
+          <h1>Voice of the <span style="color:#fff">Dead Halo</span></h1>
+          <p class="lead">A fallen warlord. A fortress of midnight. A godless world that still hears prayer. Enter the first chapter of a saga where death is a mechanic—and fate can be hacked.</p>
+          <div class="cta-row">
+            <a class="btn" href="#book">Read the Blurb</a>
+            <a class="btn btn--ghost" href="#newsletter">Get Updates</a>
+          </div>
+        </div>
+        <div class="cover">
+          <!-- Use the attached image. If your hosting path differs, update the src accordingly. -->
+          <img src="Pictures/Voice of the Dead Halo_front_03 (4).jpg" alt="Book cover of Voice of the Dead Halo by Black Hawk" />
+          <div class="caption">Cover art • <em>Voice of the Dead Halo</em></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT AUTHOR -->
+    <section id="about">
+      <div class="container">
+        <div class="card">
+          <h2>About Black Hawk</h2>
+          <p>Black Hawk writes high‑stakes dark fantasy and sci‑fantasy where haunted heroes grapple with impossible choices, ancient laws, and the thin edge between mercy and monstrosity. When not mapping empires and designing siege engines, Black Hawk is usually drafting songs, glyphs, and star‑charts that inevitably find their way into the stories.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section id="book">
+      <div class="container">
+        <div class="card book-grid">
+          <div>
+            <img src="./Voice of the Dead Halo_front_03 (4).jpg" alt="Voice of the Dead Halo cover" style="width:100%; border-radius:12px" />
+          </div>
+          <div>
+            <h2>Voice of the Dead Halo</h2>
+            <p>He died. Then the world asked him to lead. Waking in a body that should have been a patch of corrupted memory, Valen finds himself bound to the fortress that once bore his name—and to a chorus of the dead who will not let him rest. To save what remains, he must master the rules that govern gods, break the ones that shackle mortals, and choose whether a broken crown is still worth wearing.</p>
+            <div class="meta">
+              <div><strong>Genre:</strong> Dark Fantasy, LitRPG</div>
+              <div><strong>Series:</strong> Dead Halo — Book One</div>
+              <div><strong>Themes:</strong> fate vs. will • found power • costly mercy</div>
+            </div>
+            <div class="cta-row" style="margin-top:16px">
+              <a class="btn" href="#newsletter">Pre‑release Updates</a>
+              <a class="btn btn--ghost" href="#contact">Press & Enquiries</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter">
+      <div class="container">
+        <div class="card">
+          <h2>Join the Raven List</h2>
+          <p>Be first to receive release news, early chapters, and exclusive world‑building extras.</p>
+          <form action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="you@example.com" required />
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+          <p style="color:var(--muted); font-size:.9rem; margin-top:.5rem">No spam. Unsubscribe any time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="card">
+          <h2>Contact</h2>
+          <p>For rights, interviews, or collaboration enquiries, get in touch:</p>
+          <p><strong>Email:</strong> <a style="color:#fff" href="mailto:blackhawk.author@example.com">blackhawk.author@example.com</a></p>
+          <p><strong>Social:</strong> <a style="color:#fff" href="#">X</a> · <a style="color:#fff" href="#">Instagram</a> · <a style="color:#fff" href="#">YouTube</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; gap:1rem; align-items:center; flex-wrap:wrap">
+        <div>© <span id="year"></span> Black Hawk. All rights reserved.</div>
+        <div><a href="#top" class="btn btn--ghost" aria-label="Back to top">Back to top</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for on-page links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href');
+        if(id.length>1){ e.preventDefault(); document.querySelector(id).scrollIntoView({behavior:'smooth'}); }
+      })
+    })
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
